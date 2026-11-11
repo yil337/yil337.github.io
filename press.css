@@ -55,3 +55,9 @@ html{scroll-padding-top:140px}
 @media(max-width:1000px){.nav-links{gap:12px}.nav-links a{font-size:14px}.archive-image{height:210px}}
 @media(max-width:760px){.archive-list article{grid-template-columns:1fr;gap:10px}.archive-showcase{gap:30px}.archive-card h3{font-size:24px}.archive-image{height:220px}.zsquad-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}.zsquad-media h4{font-size:24px}.nav-links a{font-size:16px}}
 @media(max-width:560px){.archive-showcase{grid-template-columns:1fr}.archive-image{height:260px}.archive-card.theatre .archive-image,.archive-card.typography .archive-image{height:330px}.zsquad-gallery figcaption{font-size:12px}.zsquad-gallery{gap:17px 12px}.archive-list h3{font-size:20px}.archive-list p{font-size:16px}.nav-links a,.nav-links a:nth-child(3){font-size:18px}}
+
+/* Center the original name/camp composition rather than preserving the social-banner crop. */
+.hero > .wrap{width:min(1120px,calc(100% - 72px))}
+.personal-banner{overflow:hidden}
+.personal-banner img{display:block;width:100%;height:auto;aspect-ratio:9/4;object-fit:cover;object-position:right center;image-rendering:pixelated}
+@media(max-width:760px){.hero > .wrap{width:calc(100% - 40px)}}
